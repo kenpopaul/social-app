@@ -1,0 +1,48 @@
+/* Overall App Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 16px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #00acee;
+  color: white;
+  padding: 16px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 300px;
+  background-color: #f5f8fa;
+  padding: 16px;
+}
+
+/* Tweet Styles */
+.tweet {
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.tweet h4 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tweet p {
+  margin: 0;
+  font-size: 16px;
+}
