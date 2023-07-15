@@ -10,9 +10,9 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="app">
-        <Navbar />
+        <Sidebar />
         <div className="content">
-          <Sidebar />
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/explore" element={<Explore />} />
