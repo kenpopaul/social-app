@@ -27,6 +27,11 @@ const Sidebar: React.FC = () => {
           <FontAwesomeIcon icon={faEnvelope} />
           <span>Messages</span>
         </li>
+        <li>
+          <button className="tweet-button">
+            <span>Tweet</span>
+          </button>
+        </li>
       </ul>
     </div>
   );

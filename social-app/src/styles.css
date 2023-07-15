@@ -16,6 +16,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
+  border: 1px solid #e1e8ed;
   background-color: #00acee;
   color: white;
   padding: 16px;
@@ -23,9 +24,33 @@ body {
 
 /* Sidebar Styles */
 .sidebar {
-  width: 300px;
+  width: 25vw;
+  border: 1px solid #e1e8ed;
+  background-color: #000000;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li svg {
+  margin-right: 8px;
+}
+
+.tweet-button {
   background-color: #00acee;
-  padding: 16px;
+  color: white;
+  border-radius: 20px;
 }
 
 /* Tweet Styles */
