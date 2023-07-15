@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
+import "./styles.css";
 
 const App: React.FC = () => {
   return (
