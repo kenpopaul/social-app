@@ -87,6 +87,10 @@ body {
   font-weight: bold;
 }
 
+.tweet-input {
+  margin-bottom: 20px;
+}
+
 .tweet p {
   margin: 0;
   font-size: 16px;
