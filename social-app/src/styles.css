@@ -14,6 +14,10 @@ body {
   padding: 16px;
 }
 
+.home-heading {
+  border-bottom: 1px solid #ccc; /* Adjust the color and thickness as desired */
+}
+
 /* Navbar Styles */
 .navbar {
   border: 1px solid #e1e8ed;
