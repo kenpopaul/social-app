@@ -41,16 +41,32 @@ body {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .sidebar li svg {
   margin-right: 8px;
 }
 
+.sidebar li:hover {
+  background-color: #222222; /* Adjust the background color to a slightly lighter black */
+  border-radius: 20px; /* Adjust the value to control the level of rounding */
+}
+
+.sidebar li:hover svg,
+.sidebar li:hover span {
+  color: #ffffff; /* Adjust the color to your desired hover color */
+}
+
+.sidebar li:hover span {
+  border: none; /* Remove the border */
+}
+
 .tweet-button {
   background-color: #00acee;
   color: white;
   border-radius: 20px;
+  padding: 10px 60px;
 }
 
 /* Tweet Styles */

@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
-  faHashtag,
+  faSearch,
   faBell,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
@@ -16,7 +16,7 @@ const Sidebar: React.FC = () => {
           <span>Home</span>
         </li>
         <li>
-          <FontAwesomeIcon icon={faHashtag} />
+          <FontAwesomeIcon icon={faSearch} />
           <span>Explore</span>
         </li>
         <li>
