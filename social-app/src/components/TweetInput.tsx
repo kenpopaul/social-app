@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const TweetInput = () => {
   const [tweetText, setTweetText] = useState("");
-  const [tweets, setTweets] = useState<{ text: string; timestamp: string }[]>(
-    []
-  );
+  const [tweets, setTweets] = useState<
+    { text: string; timestamp: string; liked: boolean }[]
+  >([]);
   const [username, setUsername] = useState("YourUsername");
 
   const handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -31,10 +33,17 @@ const TweetInput = () => {
       const newTweet = {
         text: tweetText,
         timestamp: getFormattedTimestamp(),
+        liked: false,
       };
       setTweets([newTweet, ...tweets]);
       setTweetText("");
     }
+  };
+
+  const handleLike = (index: number) => {
+    const updatedTweets = [...tweets];
+    updatedTweets[index].liked = !updatedTweets[index].liked;
+    setTweets(updatedTweets);
   };
 
   return (
@@ -55,6 +64,12 @@ const TweetInput = () => {
             <span className="tweet-timestamp">{tweet.timestamp}</span>
           </div>
           <div className="tweet-content">{tweet.text}</div>
+          <div
+            className={`heart-icon ${tweet.liked ? "liked" : ""}`}
+            onClick={() => handleLike(index)}
+          >
+            <FontAwesomeIcon icon={faHeart} />
+          </div>
         </div>
       ))}
     </div>
