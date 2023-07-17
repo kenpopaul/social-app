@@ -13,7 +13,7 @@ const TweetInput = () => {
 
   const getFormattedTimestamp = () => {
     const date = new Date();
-    const options = {
+    const options: Intl.DateTimeFormatOptions = {
       year: "numeric",
       month: "long",
       day: "numeric",
