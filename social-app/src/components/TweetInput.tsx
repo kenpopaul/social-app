@@ -5,6 +5,7 @@ const TweetInput = () => {
   const [tweets, setTweets] = useState<{ text: string; timestamp: string }[]>(
     []
   );
+  const [username, setUsername] = useState("YourUsername");
 
   const handleInputChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setTweetText(event.target.value);
@@ -50,7 +51,7 @@ const TweetInput = () => {
       {tweets.map((tweet, index) => (
         <div className="tweet" key={index}>
           <div className="tweet-header">
-            <span className="tweet-username">YourUsername</span>
+            <span className="tweet-username">{username}</span>
             <span className="tweet-timestamp">{tweet.timestamp}</span>
           </div>
           <div className="tweet-content">{tweet.text}</div>
