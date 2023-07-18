@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faReply } from "@fortawesome/free-solid-svg-icons";
 
 const TweetInput = () => {
   const [tweetText, setTweetText] = useState("");
@@ -64,11 +64,17 @@ const TweetInput = () => {
             <span className="tweet-timestamp">{tweet.timestamp}</span>
           </div>
           <div className="tweet-content">{tweet.text}</div>
-          <div
-            className={`heart-icon ${tweet.liked ? "liked" : ""}`}
-            onClick={() => handleLike(index)}
-          >
-            <FontAwesomeIcon icon={faHeart} />
+          <div className="tweet-actions">
+            <div
+              className={`heart-icon ${tweet.liked ? "liked" : ""}`}
+              onClick={() => handleLike(index)}
+            >
+              <FontAwesomeIcon icon={faHeart} />
+            </div>
+            <div className="spacing"></div>
+            <div className="reply-icon">
+              <FontAwesomeIcon icon={faReply} />
+            </div>
           </div>
         </div>
       ))}
