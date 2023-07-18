@@ -121,3 +121,7 @@ body {
 .tweet-timestamp {
   font-weight: bold;
 }
+
+.tweet-username {
+  margin-right: 8px; /* Adjust the value as needed */
+}
