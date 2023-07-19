@@ -9,14 +9,20 @@ import "./styles.css";
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="app">
-        <Sidebar />
-        <div className="content">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/explore" element={<Explore />} />
-          </Routes>
+      <div className="app-container">
+        {" "}
+        {/* Add the wrapper div */}
+        <div className="app">
+          {" "}
+          {/* Add the app container */}
+          <Sidebar />
+          <div className="content">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/explore" element={<Explore />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </Router>
