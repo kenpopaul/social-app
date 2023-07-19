@@ -10,8 +10,8 @@ const Home: React.FC = () => {
         <TweetInput />
         {/* Existing tweet list code */}
       </div>
-      <Tweet username="JohnDoe" content="This is my first tweet!" />
-      <Tweet username="JaneSmith" content="Excited to join Twitter!" />
+      <Tweet username="Shane Tall" content="Project One complete!" />
+      <Tweet username="Jane Smith" content="Excited to Start this job!" />
     </div>
   );
 };
